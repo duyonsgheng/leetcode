@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
  * @Date 2022/9/8 15:51
  **/
 // 692. 前K个高频单词
-public class LeeCode_692 {
+public class LeetCode_692 {
 
     public List<String> topKFrequent(String[] words, int k) {
         Map<String, Integer> count = new HashMap<>();
