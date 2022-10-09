@@ -42,6 +42,6 @@ public class LeetCode_791 {
 
     public static void main(String[] args) {
         String order = "cbafg", s = "abcd";
-        System.out.println(customSortString(order,s));
+        System.out.println(customSortString(order, s));
     }
 }
