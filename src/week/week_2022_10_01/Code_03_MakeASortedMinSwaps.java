@@ -56,7 +56,7 @@ public class Code_03_MakeASortedMinSwaps {
         if (findI != -1) {
             // 被替换了一次
             int next = process(A, B, ai + 1, findI + 1, 1);
-            if (next != Integer.MIN_VALUE) {
+            if (next != Integer.MAX_VALUE) {
                 p2 = next + 1;
             }
         }
