@@ -25,6 +25,9 @@ public class LeetCode_1110 {
             set.add(i);
         }
         process(root, set, ans);
+        if (root != null && !set.contains(root.val)) {
+            ans.add(root);
+        }
         return ans;
     }
 
@@ -36,10 +39,12 @@ public class LeetCode_1110 {
         cur.right = process(cur.right, delete, ans);
         if (delete.contains(cur.val)) {
             if (cur.left != null) {
+                ans.add(cur.left);
             }
             if (cur.right != null) {
-
+                ans.add(cur.right);
             }
+            cur = null;
         }
         return cur;
     }
