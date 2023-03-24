@@ -1,12 +1,12 @@
 package duys_code.day_03;
 
 /**
- * @ClassName Code_03_Largest1BorderedSquare
+ * @ClassName Code_03_LeetCode_1139
  * @Author Duys
  * @Description 力扣原题: https://leetcode-cn.com/problems/largest-1-bordered-square/
  * @Date 2021/9/18 17:13
  **/
-public class Code_03_Largest1BorderedSquare {
+public class Code_03_LeetCode_1139 {
     /**
      * 给定一个只有0和1组成的二维数组
      * 返回边框全是1的最大正方形面积
@@ -33,7 +33,7 @@ public class Code_03_Largest1BorderedSquare {
                 if (right[i][j] >= size && down[i][j] >= size &&
                         // 意思是列不动，行去当前行+size的地方看看他的右边是不是也是满足的
                         right[i + size - 1][j] >= size &&
-                        // 行不懂，列去当前列+size的地方看看是不是满足的，就是看看四条边
+                        // 行不动，列去当前列+size的地方看看是不是满足的，就是看看四条边
                         down[i][j + size - 1] >= size) {
                     return true;
                 }
