@@ -17,4 +17,11 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    public static void main(String[] args) {
+        int i=25;
+        int b =16;
+
+        System.out.println(i%b);
+    }
 }

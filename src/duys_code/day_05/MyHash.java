@@ -1,6 +1,5 @@
 package duys_code.day_05;
 
-import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -23,6 +22,7 @@ public class MyHash {
     }
 
     public String hashCode(String input) {
-        return DatatypeConverter.printHexBinary(messageDigest.digest(input.getBytes())).toUpperCase();
+       // return DatatypeConverter.printHexBinary(messageDigest.digest(input.getBytes())).toUpperCase();
+        return null;
     }
 }

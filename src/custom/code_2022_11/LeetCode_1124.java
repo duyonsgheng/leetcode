@@ -59,5 +59,6 @@ public class LeetCode_1124 {
     public static void main(String[] args) {
         int[] hours = {9, 9, 6, 0, 6, 6, 9};
         System.out.println(longestWPI(hours));
+        System.out.println(longestWPI1(hours));
     }
 }

@@ -1,0 +1,12 @@
+1.https://leetcode.cn/problems/maximum-average-pass-ratio/
+    贪心。根据增益使用优先级队列。比如 x / y 那么增益就是 (x+1)/(y+1) - x/y
+
+2.https://leetcode.cn/problems/jian-sheng-zi-ii-lcof/
+    x%3 = 0 拆成多个3
+    x%3 = 1 拆2*2，剩下的x-4继续拆成多个3
+    x%3 = 2 先拆2 剩下的x-2拆成多个3列出来
+
+3.https://leetcode.cn/problems/grid-illumination/
+    离散化，四个记录，行、列、左对角线、右对角线
+
+4.https://leetcode.cn/problems/stamping-the-sequence/
