@@ -30,6 +30,7 @@ public class Code_02_50_LeetCode {
         return n > 0 ? ans : 1 / ans;
     }
 
+    // 快速幂 x的n次幂
     public static int pow(int x, int n) {
         int ans = 1;
         int t = x;

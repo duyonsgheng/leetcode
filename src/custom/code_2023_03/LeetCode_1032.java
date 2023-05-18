@@ -11,11 +11,10 @@ import java.util.Queue;
  **/
 // 字符流
 // AC自动机
-public class LeeoCode_1032 {
-    class StreamChecker {
+class LeeoCode_1032 {
+    private class StreamChecker {
         TreeNode root;
         TreeNode tmp;
-
 
         public StreamChecker(String[] words) {
             root = new TreeNode();
@@ -61,7 +60,7 @@ public class LeeoCode_1032 {
         }
     }
 
-    class TreeNode {
+    public class TreeNode {
         TreeNode[] next;
         TreeNode fail;
         boolean isEnd;
@@ -71,3 +70,5 @@ public class LeeoCode_1032 {
         }
     }
 }
+
+
