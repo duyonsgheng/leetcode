@@ -27,6 +27,16 @@ public class Code_03_InsertSort {
         }
     }
 
+    public static void sort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int cur = i;
+            while (cur > 0 && arr[cur] <= arr[cur - 1]) {
+                swap(arr,cur,cur-1);
+                cur--;
+            }
+        }
+    }
+
     public static void insertSort1(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
@@ -47,7 +57,7 @@ public class Code_03_InsertSort {
 
     public static void main(String[] args) {
         int[] arr = {4, 3, 5, 8, 6, 5, 2, 1, 9};
-        insertSort1(arr);
+        sort(arr);
         for (int i : arr) {
             System.out.print(" " + i);
         }

@@ -29,6 +29,15 @@ public class Code_01_SelectSort {
         }
     }
 
+    public static void sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int index = i;
+            for (int j = i + 1; j < arr.length; j++)
+                index = arr[j] < arr[index] ? j : index;
+            swap(arr, i, index);
+        }
+    }
+
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
@@ -37,7 +46,7 @@ public class Code_01_SelectSort {
 
     public static void main(String[] args) {
         int[] arr = {4, 3, 5, 8, 6, 2, 1, 9};
-        selectSort1(arr);
+        sort(arr);
         for (int i : arr) {
             System.out.print(" " + i);
         }

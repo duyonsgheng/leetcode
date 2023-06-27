@@ -54,13 +54,6 @@ public class LeetCode_216 {
         if (rest - arr[index] < 0) {
             return;
         }
-        if (rest - arr[index] == 0 && path.size() == (k - 1)) {
-            List<Integer> ans = new ArrayList<>();
-            ans.addAll(path);
-            ans.add(arr[index]);
-            res.add(ans);
-            return;
-        }
         path.add(arr[index]);
         process(arr, k, rest - arr[index], index + 1, path, res);
         path.remove(path.size() - 1);

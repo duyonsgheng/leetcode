@@ -7,7 +7,7 @@ package custom.code_2022_04;
  * @Date 2022/4/26 13:15
  **/
 // https://leetcode-cn.com/problems/palindrome-number/
-public class LeetCode_08 {
+public class LeetCode_09 {
 
     public static boolean isPalindrome(int x) {
         if (x < 0) {

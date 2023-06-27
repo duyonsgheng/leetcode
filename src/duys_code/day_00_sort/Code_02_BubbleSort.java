@@ -25,6 +25,16 @@ public class Code_02_BubbleSort {
         }
     }
 
+    public static void sort(int[] arr) {
+        for (int i = arr.length - 1; i >= 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
+                }
+            }
+        }
+    }
+
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
@@ -33,7 +43,7 @@ public class Code_02_BubbleSort {
 
     public static void main(String[] args) {
         int[] arr = {-64, -50, -17, -41, 48, 24, -13, 6, -7, 26, -28, 22, -35, -14, -15, -47, 0, -1, 48, 19, 31, 55, 65};
-        bubbleSort(arr);
+        sort(arr);
         for (int i : arr) {
             System.out.print(" " + i);
         }

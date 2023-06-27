@@ -16,6 +16,7 @@ public class Code_02_LeetCode_827 {
         int fn = 2; // 岛的编号从2开始，
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+                // 把能连的连到一片
                 if (grid[i][j] == 1) {
                     infect(grid, i, j, fn++, m, n);
                 }
@@ -26,12 +27,14 @@ public class Code_02_LeetCode_827 {
         int ans = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+                // 先找到最大的这一片
                 if (grid[i][j] > 1) {
                     ans = Math.max(ans, ++size[grid[i][j]]);
                 }
             }
         }
         // 枚举0的位置
+        // 看看当前为0的位置左右上下连在一起，有多大的面积
         boolean[] visited = new boolean[fn];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
