@@ -15,7 +15,7 @@ public class LeetCode_646 {
             return 0;
         }
         // 根据结束位置来排序
-        Arrays.sort(pairs, (a, b) -> a[1] - b[1]);
+        Arrays.sort(pairs, (a, b) -> a[0] != b[0] ? a[0] - b[0] : a[1] - b[1]);
         int pre = Integer.MIN_VALUE;
         int ans = 0;
         for (int[] arr : pairs) {

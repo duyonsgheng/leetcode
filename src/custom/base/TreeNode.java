@@ -1,5 +1,8 @@
 package custom.base;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.StampedLock;
+
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -19,9 +22,6 @@ public class TreeNode {
     }
 
     public static void main(String[] args) {
-        int i=25;
-        int b =16;
-
-        System.out.println(i%b);
+        System.out.println((int)'a');
     }
 }
