@@ -1,4 +1,4 @@
-package week.week_2023_06_003;
+package week.week_2023_06_03;
 
 // 来自字节
 // 密码是一串长度为n的小写字母，一则关于密码的线索纸条
@@ -33,9 +33,9 @@ public class Code_02_PasswordWays {
     }
 
     public static int ways2(int[] arr) {
-        var n = arr.length;
-        var mod = 1_000_000_007;
-        var dp = new int[n + 1][26];
+        int n = arr.length;
+        int mod = 1_000_000_007;
+        int[][] dp = new int[n + 1][26];
         for (int i = 0; i < 26; i++) {
             dp[n][i] = 1;
         }
