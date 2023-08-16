@@ -26,5 +26,14 @@ public class Video_032_1_Bitset {
         public void remove(int num) {
             set[num / 32] &= ~(1 << (num % 32));
         }
+
+        // 如果不存在这个数则加上，存在了则删除
+        public void reverse(int num) {
+            set[num / 32] ^= (1 << (num % 32));
+        }
+
+        public boolean contains(int num) {
+            return ((set[num / 32] >> (num % 32)) & 1) == 1;
+        }
     }
 }
