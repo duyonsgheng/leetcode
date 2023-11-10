@@ -27,6 +27,8 @@ public class Code03_SumOfSubarrayMinimums {
             while (r > 0 && arr[stack[r - 1]] >= arr[i]) {
                 int cur = stack[--r];
                 int left = r == 0 ? -1 : stack[r - 1];
+                // 以当前数结尾作为最小值的情况下
+                // 以当前数开头作为最小值的情况下
                 ans = (ans + (long) (cur - left) * (i - cur) * arr[cur]) % MOD;
             }
             stack[r++] = i;
